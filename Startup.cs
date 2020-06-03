@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ef_core_sql_server.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 
 namespace ef_core_sql_server
 {
@@ -26,6 +28,9 @@ namespace ef_core_sql_server
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(
+                Configuration.GetConnectionString("NorthwindDatabase")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
