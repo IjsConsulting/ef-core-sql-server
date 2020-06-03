@@ -22,10 +22,7 @@ namespace ef_core_sql_server.Controllers
 
         // GET: api/Customers
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Customers>>> GetCustomers()
-        {
-            return await _customerService.GetCustomersAsync();
-        }
+        public async Task<ActionResult<IEnumerable<Customers>>> GetCustomers() => await _customerService.GetCustomersAsync();
 
         // GET: api/Customers/5
         [HttpGet("{id}")]
