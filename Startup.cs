@@ -29,8 +29,11 @@ namespace ef_core_sql_server
         {
             services.AddControllers();
 
-            services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(
-                Configuration.GetConnectionString("NorthwindDatabase")));
+            var config = Configuration.GetConnectionString("NorthwindDatabase");
+
+            services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(config));
+
+            services.AddSingleton<ICustomerService, CustomerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
