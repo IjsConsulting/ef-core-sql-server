@@ -125,3 +125,8 @@ C:\Working\az204\ef-core-sql-server\obj\Debug\netcoreapp3.1\staticwebassets\ef-c
 C:\Working\az204\ef-core-sql-server\obj\Debug\netcoreapp3.1\ef-core-sql-server.dll
 C:\Working\az204\ef-core-sql-server\obj\Debug\netcoreapp3.1\ef-core-sql-server.pdb
 C:\Working\az204\ef-core-sql-server\obj\Debug\netcoreapp3.1\ef-core-sql-server.genruntimeconfig.cache
+C:\Working\az204\ef-core-sql-server\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Working\az204\ef-core-sql-server\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Working\az204\ef-core-sql-server\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Working\az204\ef-core-sql-server\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Working\az204\ef-core-sql-server\obj\Debug\netcoreapp3.1\ef-core-sql-server.MvcApplicationPartsAssemblyInfo.cs
